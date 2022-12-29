@@ -19,8 +19,10 @@ samples, guidance on mobile development, and a full API reference.
 
 git add .
 to add all the changes
+
 git commit -m "commit message"
 to commit the changes after add
+
 git push
 to save at the server
 

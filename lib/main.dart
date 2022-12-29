@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:internship/day%203/day3.dart';
 
 import 'home_page/home.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Whatsapp'),
+      home: const DayThree(),
     );
   }
 }
