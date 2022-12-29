@@ -14,3 +14,14 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+<!-- Command for Git -->
+
+git add .
+to add all the changes
+git commit -m "commit message"
+to commit the changes after add
+git push
+to save at the server
+
+<!--  -->
