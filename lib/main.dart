@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:internship/day%203/day3.dart';
+import 'package:internship/day4/day4.dart';
 
 import 'home_page/home.dart';
 
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Samson App',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
-      home: const DayThree(),
+      home: const DayFour(),
     );
   }
 }

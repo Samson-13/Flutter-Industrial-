@@ -31,19 +31,30 @@ class _DayThreeState extends State<DayThree> {
             child: ListView.builder(
               itemCount: todos.length,
               itemBuilder: (context, index) {
+                var item = todos[index];
                 return Card(
                   child: ListTile(
-                    title: Text(todos[index]),
-                    subtitle: const Text("Subtitle"),
-                    leading: const Icon(Icons.verified_user),
-                  ),
+                      onTap: () {
+                        todos[index] = "$item clicked";
+                        setState(() {});
+                      },
+                      title: Text(todos[index]),
+                      subtitle: const Text("Subtitle"),
+                      leading: const Icon(Icons.verified_user),
+                      trailing: IconButton(
+                        onPressed: () {
+                          todos.removeAt(index);
+                          setState(() {});
+                        },
+                        icon: Icon(Icons.delete),
+                      )),
                 );
               },
             ),
           ),
           Container(
             height: 100,
-            color: Colors.grey,
+            color: Colors.yellow,
             child: Row(
               children: [
                 Expanded(
